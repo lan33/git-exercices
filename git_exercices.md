@@ -43,7 +43,7 @@
 
 6. Utilisez `git checkout` pour revenir temporairement à un commit précédent (par exemple, le deuxième commit) :
    ```bash
-   git checkout 
+   git checkout <SHA-du-commit>
    ```
 
 7. Vérifiez l’état du répertoire de travail pour observer les modifications :
