@@ -89,7 +89,12 @@ git log --oneline
 
 # Expérimentation avec reset
 # 1. Soft reset: déplace HEAD mais garde les modifications dans l'index
+# Déplace HEAD un pas en arrière
 git reset --soft HEAD~1
+# Déplace HEAD deux pas en arrière
+git reset --soft HEAD~2
+# ou
+git reset --soft <SHA-du-commit>
 
 # Vérification: modifications toujours dans l'index
 git status
@@ -107,6 +112,8 @@ git commit -m "Ajout fichier test-reset"
 
 # 2. Mixed reset (par défaut): déplace HEAD et réinitialise l'index
 git reset HEAD~1
+# ou
+git reset <SHA-du-commit>
 
 # Vérification: modification dans le répertoire de travail mais pas dans l'index
 git status
@@ -120,6 +127,8 @@ git log --oneline
 
 # 3. Hard reset: tout annuler
 git reset --hard HEAD~1
+# ou
+git reset --hard <SHA-du-commit>
 
 # Vérification: affichage de l'historique
 git log --oneline
@@ -147,7 +156,7 @@ git log --oneline
 | `git reset --soft `| Déplace HEAD       | Conserve les changements        | Aucun changement                           | Annuler un ou plusieurs commits          |
 | `git reset --hard `| Déplace HEAD       | Réinitialise                   | Réinitialise                               | Supprimer définitivement des modifications |
 
-## Quelques défnitions et concepts
+## Quemlques défnitions et concepts
 - **Contrôle de version** : Système qui enregistre les modifications d'un fichier ou ensemble de fichiers au fil du temps
 - **Git** : Système de contrôle de version distribué créé par Linus Torvalds en 2005
 - **Repository (dépôt)** : Collection complète des fichiers et de leur historique de versions
