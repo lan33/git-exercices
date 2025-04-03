@@ -68,7 +68,6 @@
 **Consignes:**
 1. Créez plusieurs commits sur une branche
 2. Expérimentez avec les différentes options de reset
-3. Annulez un commit publié avec revert
 
 ```bash
 # Création d'une branche experimentations et de plusieurs commits sur cette branche
