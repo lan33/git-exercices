@@ -125,6 +125,20 @@ git reset --hard HEAD~1
 git log --oneline
 ```
 
+## `git revert`
+
+**Revert** : Création d'un nouveau commit qui annule les effets d'un commit précédent
+
+```bash
+# Récupération du SHA du commit que vous souhaitez annuler
+git log --oneline
+
+git revert <SHA-du-commit-à-annuler>
+
+# Vérification: affichage de l'historique
+git log --oneline
+```
+
 ## `git checkout` vs `git reset`
 
 | **Commande**               | **Effet sur HEAD** | **Effet sur l'index (staging)** | **Effet sur le répertoire de travail (RT)** | **Usage recommandé**                     |
