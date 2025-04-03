@@ -4,8 +4,8 @@
 
 1. **Créer un nouveau répertoire et initialiser un dépôt Git :**
    ```bash
-   mkdir exercice1_git_checkout
-   cd exercice1_git_checkout
+   mkdir git_exercices
+   cd git_exercices
    git init
    ```
 
