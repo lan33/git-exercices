@@ -147,7 +147,7 @@ git log --oneline
 | `git reset --soft `| Déplace HEAD       | Conserve les changements        | Aucun changement                           | Annuler un ou plusieurs commits          |
 | `git reset --hard `| Déplace HEAD       | Réinitialise                   | Réinitialise                               | Supprimer définitivement des modifications |
 
-## Quemlques défnitions et concepts
+## Quelques défnitions et concepts
 - **Contrôle de version** : Système qui enregistre les modifications d'un fichier ou ensemble de fichiers au fil du temps
 - **Git** : Système de contrôle de version distribué créé par Linus Torvalds en 2005
 - **Repository (dépôt)** : Collection complète des fichiers et de leur historique de versions
