@@ -123,3 +123,30 @@ git reset --hard HEAD~1
 
 # Vérification: affichage de l'historique
 git log --oneline
+```
+
+## `git checkout` vs `git reset`
+
+| **Commande**               | **Effet sur HEAD** | **Effet sur l'index (staging)** | **Effet sur le répertoire de travail (RT)** | **Usage recommandé**                     |
+|----------------------------|--------------------|---------------------------------|--------------------------------------------|------------------------------------------|
+| `git checkout `    | Déplace HEAD       | Aucun changement               | Met RT à l’état du commit                  | Explorer temporairement                  |
+| `git reset --soft `| Déplace HEAD       | Conserve les changements        | Aucun changement                           | Annuler un ou plusieurs commits          |
+| `git reset --hard `| Déplace HEAD       | Réinitialise                   | Réinitialise                               | Supprimer définitivement des modifications |
+
+## Quemlques défnitions et concepts
+- **Contrôle de version** : Système qui enregistre les modifications d'un fichier ou ensemble de fichiers au fil du temps
+- **Git** : Système de contrôle de version distribué créé par Linus Torvalds en 2005
+- **Repository (dépôt)** : Collection complète des fichiers et de leur historique de versions
+- **Commit** : Instantané des fichiers à un moment donné, identifié par un SHA-1
+- **SHA-1** : Identifiant unique de 40 caractères pour chaque commit
+- **HEAD** : Pointeur sur le dernier commit de la branche courante
+- **Branche** : Ligne de développement indépendante, simple pointeur vers un commit
+- **Répertoire .git** : Stocke les métadonnées et la base de données des objets du projet
+- **Répertoire de travail** : Extraction d'une version du projet sur le disque
+- **L'index (staging area)** : Zone de préparation pour le prochain commit
+- **Dépôt distant (remote)** : Version du projet hébergée ailleurs (GitHub, GitLab, etc.)
+- **Origin** : Nom conventionnel du dépôt distant principal
+- **Clone** : Copie complète d'un dépôt distant
+- **Fetch** : Récupération des modifications sans fusion
+- **Pull** : Récupération et fusion des modifications (fetch + merge)
+- **Push** : Envoi des modifications locales vers le dépôt distant
