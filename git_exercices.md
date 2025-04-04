@@ -342,3 +342,11 @@ git commit -m "Résolution du conflit dans conflit.txt"
 # Visualisation du graphe des commits
 git log --graph --oneline --all
 ```
+
+## Bonne pratiques
+
+- Protéger la branche `main` de l'écriture directe
+- Créer une branche pour chaque fonctionnalité / user story
+- Effectuer des commits fréquents et incrémentaux
+- Rédiger des messages de commit clairs
+- Créer un pull request pour revoir le code et merger sur `main`
